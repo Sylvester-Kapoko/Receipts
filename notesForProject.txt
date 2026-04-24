@@ -22,3 +22,33 @@ tabnew file_name
 tabnext
 tabprevious 
 
+
+using system clipboard 
+
+copy - "+y
+paste - "+p
+
+
+Run Go
+
+:!go run %
+
+
+install github cli for performing advanced git tasks
+
+go mod init github.com/Sylvester-Kapoko/name_of_project
+
+go mod tidy 
+
+
+create a repo from the commandline 
+
+manual injection of dependency
+
+
+921F-E7EC
+
+github cli one time code
+
+
+
