@@ -1,0 +1,24 @@
+receipt data structure
+receipt templates
+receipt componets
+receipt components
+receipt printing libraries
+user interface
+
+tips to use vim
+
+copy 
+press v 
+select text
+press y
+
+
+paste
+press p or P
+
+Tabs
+
+tabnew file_name
+tabnext
+tabprevious 
+
