@@ -1,0 +1,21 @@
+package main
+
+import (
+	"github.com/Sylvester-Kapoko/Receipts/handler"
+
+	"github.com/Sylvester-Kapoko/Receipts/handler"
+	"github.com/Sylvester-Kapoko/Receipts/repository"
+	"net/http"
+}
+
+
+
+func main() {
+	repo := repository.NewUserRepository()  //lowest layer
+	service := service.NewUserService(repo) // depends on repo
+	handler := handler.NewHandler(service)  //depends on service
+
+	http.Handle("/user", handler)
+	http.ListenAndServe(":8080", nil)
+
+}

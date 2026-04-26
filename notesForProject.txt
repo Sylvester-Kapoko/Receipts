@@ -1,20 +1,19 @@
 receipt data structure
 receipt templates
-receipt componets
 receipt components
 receipt printing libraries
 user interface
 
 tips to use vim
 
-copy 
-press v 
-select text
-press y
+copy - press y 
+
+select text - press v 
 
 
-paste
-press p or P
+
+paste - press p or P
+
 
 Tabs
 
@@ -32,6 +31,10 @@ paste - "+p
 Run Go
 
 :!go run %
+use this
+
+:term go run file_name.go
+
 
 
 install github cli for performing advanced git tasks
@@ -39,6 +42,7 @@ install github cli for performing advanced git tasks
 go mod init github.com/Sylvester-Kapoko/name_of_project
 
 go mod tidy 
+
 
 
 create a repo from the commandline 
@@ -50,5 +54,11 @@ manual injection of dependency
 
 github cli one time code
 
+
+
+https://www.freecodecamp.org/news/how-to-use-dependency-injection-in-go/
+
+
+I have three folders:- service, handler and repository. There is one main.go file at the root where the folders are located. Inside each folder we have a .go file. My question is what would be the package at the top of those three files, as the case of main.go has a package main at the start of the file.
 
 
