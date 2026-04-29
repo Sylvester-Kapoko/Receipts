@@ -62,3 +62,13 @@ https://www.freecodecamp.org/news/how-to-use-dependency-injection-in-go/
 I have three folders:- service, handler and repository. There is one main.go file at the root where the folders are located. Inside each folder we have a .go file. My question is what would be the package at the top of those three files, as the case of main.go has a package main at the start of the file.
 
 
+
+
+15:20 27/04/2026
+
+reference 
+
+https://medium.com/@anjali24comp/connecting-gui-to-backend-logic-a390f94835ba
+
+We have managed to do correction on an app and we will add features as we move ahead. 
+

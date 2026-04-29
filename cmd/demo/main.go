@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
+	
+                 "os"
 	"time"
-
 	"github.com/shopspring/decimal"
 	"github.com/Sylvester-Kapoko/Receipts/domain"
 	"github.com/Sylvester-Kapoko/Receipts/printer"
@@ -28,9 +28,14 @@ func main() {
 		CreatedAt: time.Now(),
 	}
 
-	formatter := printer.NewPlainTextFormatter(32)
-	output := formatter.Format(receipt)
-	fmt.Println(output)
+	formatter := printer.NewPlainTextFormatter(32)   // if needed change back to 32
+	receiptPrinter := printer.NewReceiptPrinter(formatter, os.Stdout)
+	
+                // print
+               if err := receiptPrinter.Print(receipt); err != nil {
+                   panic(err)
+               }
+
 }
 
 
